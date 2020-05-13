@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignmnet 2 , Makeup Transform </title>
+</head>
+<body>
+<h1>Digital Face Makeup by Example</h1>
+<h3>Nikhil Gupta (2014EE10463)</h3>
+<h3>Aniket Dashpute (2014EE10434) </h3>
+
+    <table BORDER=3>
+        <tr>
+            <td>
+                <table style="width:20% ; margin: 0.3cm;">
+                    <tr>
+                        <td COLSPAN=3 align="center">
+                            <img src="1/subject.jpg" style="width:120px;height:120px;">
+                            <p>
+                                Subject
+                            </p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <img src="1/example.jpg" style="width:120px;height:120px;">
+                            <p> Example  </p>
+                        </td>
+                        <td><h2> &rarr;</h2></td>
+                        <td align="center">
+                            <img src="1/example_w.jpg" style="width:120px;height:120px;">
+                            <p>  Warped</p>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table style="width:20%; margin: 0.3cm;">
+
+                    <tr>
+                        <td> &nbsp;</td>
+                        <td align="center"><p> Face Structure  </p></td>
+                        <td align="center"><p> Skin Detail </p></td>
+                        <td align="center"><p> Color A </p></td>
+                        <td align="center"><p> Color B </p></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> subject  </p> </td>
+                        <td><img src="1/subject_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/subject_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/subject_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/subject_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> example warped </p> </td>
+                        <td><img src="1/example_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/example_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/example_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/example_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> results  </p> </td>
+                        <td><img src="1/result_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/result_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/result_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="1/result_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+
+                </table>
+            </td>
+            <td align="center">
+                <h2>
+                    Result
+                </h2>
+                <img src="1/result.jpg" style="width:200px;height:200px;  margin: 0.3cm;">
+            </td>
+        </tr>
+
+    </table>
+    <table BORDER=3>
+        <tr>
+            <td>
+                <table style="width:20% ; margin: 0.3cm;">
+                    <tr>
+                        <td COLSPAN=3 align="center">
+                            <img src="original/subject.jpg" style="width:120px;height:120px;">
+                            <p>
+
+                                Subject
+                            </p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <img src="original/example.jpg" style="width:120px;height:120px;">
+                            <p> Example  </p>
+                        </td>
+                        <td><h2> &rarr;</h2></td>
+                        <td align="center">
+                            <img src="original/example_w.jpg" style="width:120px;height:120px;">
+                            <p>
+                                Warped
+                            </p>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table style="width:20%; margin : 0.3cm;">
+
+                    <tr>
+                        <td> &nbsp;</td>
+                        <td align="center"><p> Face Structure  </p></td>
+                        <td align="center"><p> Skin Detail </p></td>
+                        <td align="center"><p> Color A </p></td>
+                        <td align="center"><p> Color B </p></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> subject  </p> </td>
+                        <td><img src="original/subject_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/subject_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/subject_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/subject_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> example warped </p> </td>
+                        <td><img src="original/example_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/example_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/example_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/example_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+                    <tr>
+                        <td><p> results  </p> </td>
+                        <td><img src="original/result_s.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/result_d.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/result_c_a.jpg" style="width:120px;height:120px;"></td>
+                        <td><img src="original/result_c_b.jpg" style="width:120px;height:120px;"></td>
+
+                    </tr>
+
+                </table>
+            </td>
+            <td align="center">
+                <h2>
+                    Result
+                </h2>
+                <img src="original/result.jpg" style="width:200px;height:200px;  margin: 0.3cm;">
+            </td>
+        </tr>
+
+    </table>
+
+    <h1>
+        Steps : 
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <h3>
+                   1.  Face Image after Morphing
+                </h3>
+			<p1>
+Correspondence points were selected manually. 62 points were selected for image warping and a decent correspondence was obtained.
+<br>
+The image was warped using delaunay triangulation where the mapping was achieved through barycentric co-ordinates
+</p1>
+<br>
+  		<img src="seq/1/c.png" style="width:600px;height:280px;  margin: 0.3cm;">
+<br>
+                <img src="seq/1/example.jpg" style="width:200px;height:210px;  margin: 0.3cm;">
+
+                <img src="seq/1/example_w.jpg" style="width:200px;height:210px; margin: 0.3cm;">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>
+                   2.  Detail and Base Layer of Morphed Image  </h3>
+<p1>
+Base layer ad detail layer were obtained through Weighted Least Squares Filter. The base layer was a result of applying this wlsFilter while the detali layer was obtained by subtracting the base layer from original image
+</p1>
+<br>
+                    <img src="seq/2/example_d.jpg" style="width:200px;height:210px; margin: 0.3cm;">
+                    <img src="seq/2/example_s.jpg" style="width:200px;height:210px;  margin: 0.3cm;">
+               
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>
+                   3.  Results after Color Transfer  </h3>
+<p1>Skin color was transferred partially whereas the parts near eyes were given more weightage. </p1>
+<br>
+  <img src="seq/3/bbur.jpg" style="width:200px;height:210px;  margin: 0.3cm;">
+<br>
+                    <img src="seq/3/subject.jpg" style="width:200px;height:210px;  margin: 0.3cm;">
+                    <img src="seq/3/result3.jpg" style="width:200px;height:210px;  margin: 0.3cm;">
+               
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>
+                   4.  Results after Highlight and Shading Transfer </h3>
+<p1>Highlight and shading transfer was done using poisson solver equation</p1>
+<br>
+                    <img src="seq/4/subject.jpg" style="width:200px;height:210px; margin: 0.3cm; ">
+                    <img src="seq/4/result4.jpg" style="width:200px;height:210px; margin: 0.3cm;">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>
+                   5.  Results after Lip Makeup </h3>
+<p1>Lip makeup was done by constructing matrix M while adding the details using poisson solver equation
+</p1>
+<br>
+                    <img src="seq/5/subject.jpg" style="width:200px;height:210px; margin: 0.3cm;">
+                    <img src="seq/5/result.jpg" style="width:200px;height:210px; margin: 0.3cm;">
+                    
+               
+            </td>
+        </tr>
+    </table>
+
+    <h1>
+        Experimentation
+    </h1>
+<table style="margin-left : 3cm;">
+        <tr>
+                   <th>Subject </th>
+                   <th>Example</th>
+                <th>Morphing </th>
+                   <th>Result</th>
+         </tr>
+
+        <tr>
+                
+                 <td><img src="exp/1/subject.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/1/example.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/1/example_w.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/1/result.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+         
+         </tr>
+         <tr>
+                 
+                     <td><img src="exp/2/subject.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                     <td><img src="exp/2/example.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                     <td><img src="exp/2/example_w.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                     <td><img src="exp/2/result.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             
+         </tr>
+         <tr>
+             
+                 <td><img src="exp/3/subject.png" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/3/example.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/3/example_w.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+                 <td><img src="exp/3/result.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+         
+         </tr>
+         <tr>
+             
+             <td><img src="exp/4/subject.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/4/example.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/4/example_w.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/4/result.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+         
+         </tr>
+         <tr>
+             
+             <td><img src="exp/5/subject.jpg" style="width:120px;height:130px;margin: 0.3cm;"></td>
+             <td><img src="exp/5/example.jpg" style="width:120px;height:130px;margin: 0.3cm;"></td>
+             <td><img src="exp/5/example_w.jpg" style="width:120px;height:130px;margin: 0.3cm;"></td>
+             <td><img src="exp/5/result.jpg" style="width:120px;height:130px;margin: 0.3cm;"></td>
+         
+         </tr>
+         
+         <tr>
+             
+             <td><img src="exp/6/subject.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/6/example.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/6/example_w.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+             <td><img src="exp/6/result.jpg" style="width:120px;height:120px;margin: 0.3cm;"></td>
+         
+         </tr>
+             
+                             
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* styles needed by the plugin */
+.animatedimage {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+}
+.animatedimage > * {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  border: 0;
+}
+/* the image that will show while waiting for javascript to load, and what users without javascript will see - if you don't want to use a class you might use *:first-child to select this instead */
+.animatedimage > .poster {
+  position: static;
+  visibility: visible;
+}
+/* spritesheets will rely on left/top positioning */
+.animatedimage[data-spritesize] > * {
+  position: relative;
+}
+
+
+/* demo styles */
+body {
+  padding: 10px;
+  margin: 0;
+  font: normal 12px sans-serif;
+
+}
+p {
+  float: left;
+  margin: 10px;
+}
+
+.animatedimage {
+  pointer-events: none; /* the image sequence has a little trouble with click events when rapidly changing the images */
+}
